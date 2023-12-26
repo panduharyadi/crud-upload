@@ -1,9 +1,12 @@
+// Package
 const express = require('express')
 const fileUpload = require('express-fileupload')
 const cors = require('cors')
 const port = 5000
-const ProductRoute = require('./routes/ProductRoutes')
 const app = express()
+
+// Folder & File
+const ProductRoute = require('./routes/ProductRoutes')
 
 app.use(cors())
 app.use(express.json())
